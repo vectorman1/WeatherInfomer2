@@ -166,16 +166,16 @@ public class MainActivity extends Activity {
 			fragment = new HomeFragment();
 			break;
 		case 1:
-			fragment = new FindPeopleFragment();
+			fragment = new ChangeLocationFragment();
 			break;
 		case 2:
-			fragment = new PhotosFragment();
+			fragment = new RateFragment();
 			break;
 		case 3:
-			fragment = new CommunityFragment();
+			fragment = new ReportIssueFragment();
 			break;
 		case 4:
-			fragment = new PagesFragment();
+			fragment = new SettingsFragment();
 			break;
 
 		default:

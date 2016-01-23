@@ -6,15 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class CommunityFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 	
-	public CommunityFragment(){}
+	public SettingsFragment(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_rate, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_report_an_issue, container, false);
          
         return rootView;
     }

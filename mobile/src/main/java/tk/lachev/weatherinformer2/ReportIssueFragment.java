@@ -6,15 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FindPeopleFragment extends Fragment {
+public class ReportIssueFragment extends Fragment {
 	
-	public FindPeopleFragment(){}
+	public ReportIssueFragment(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_change_location, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_rate, container, false);
          
         return rootView;
     }
