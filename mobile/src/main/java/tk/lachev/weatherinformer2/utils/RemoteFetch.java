@@ -1,6 +1,7 @@
 package tk.lachev.weatherinformer2.utils;
 
 import android.content.Context;
+import android.util.Log;
 
 import org.json.JSONObject;
 
@@ -16,6 +17,7 @@ public class RemoteFetch {
             "http://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=c82e35bf63b19fb44b255659bcfd292b";
 
     public static JSONObject getJSON(Context context, String city) {
+        Log.d("RemoteFetch", "Trying to fetch from " + String.format(OPEN_WEATHER_MAP_API, city));
         try {
             URL url = new URL(String.format(OPEN_WEATHER_MAP_API, city));
             HttpURLConnection connection =

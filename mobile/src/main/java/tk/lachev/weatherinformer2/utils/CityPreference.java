@@ -12,8 +12,8 @@ public class CityPreference {
         prefs = activity.getPreferences(Activity.MODE_PRIVATE);
     }
 
-    String getCity() {
-        return prefs.getString("city", "Sofia, BG");
+    public String getCity() {
+        return prefs.getString("city", "Sofia,BG");
     }
     void setCity(String city) {
         prefs.edit().putString("city", city).commit();
