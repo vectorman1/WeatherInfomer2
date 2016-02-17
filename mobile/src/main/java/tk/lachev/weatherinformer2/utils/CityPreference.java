@@ -13,9 +13,9 @@ public class CityPreference {
     }
 
     public String getCity() {
-        return prefs.getString("city", "Sofia,BG");
+        return prefs.getString("city", "Sofia");
     }
-    void setCity(String city) {
+    public void setCity(String city) {
         prefs.edit().putString("city", city).commit();
     }
 }

@@ -50,6 +50,13 @@ public class HomeFragment extends Fragment {
         weatherIcon.setTypeface(weatherFont);
         return rootView;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle("Current Weather");
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

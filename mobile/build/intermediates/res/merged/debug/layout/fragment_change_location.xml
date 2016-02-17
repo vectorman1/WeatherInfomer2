@@ -5,18 +5,25 @@
     
     <TextView
         android:id="@+id/txtLabel"
-         android:layout_width="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:textSize="16dp"
-        android:text="Find People View"/>
-    
-    <ImageView android:layout_width="wrap_content"
+        android:text="Change your location (enter city):"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtLabel"
-        android:src="@drawable/ic_people"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
-    
-
+        android:layout_below="@+id/txtLabel"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="4dp"
+        android:enabled="false"
+        android:text="Change"/>
 </RelativeLayout>

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Boris Lachev\\AndroidStudioProjects\\WeatherInfomer2\\mobile\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Boris Lachev\\AndroidStudioProjects\\WeatherInfomer2\\mobile\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\Work\\WeatherInformer2\\mobile\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
         "source": "E:\\Work\\WeatherInformer2\\mobile\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
