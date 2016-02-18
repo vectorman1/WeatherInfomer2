@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import tk.lachev.weatherinformer2.R;
 import tk.lachev.weatherinformer2.model.NavDrawerItem;
-
+//Class that basically makes them appear and controls them in the navdrawer list.
 public class NavDrawerListAdapter extends BaseAdapter {
 	
 	private Context context;

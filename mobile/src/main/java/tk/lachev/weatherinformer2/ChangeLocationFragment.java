@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import tk.lachev.weatherinformer2.utils.CityPreference;
-
+//Change Location Fragment
 public class ChangeLocationFragment extends Fragment {
 
     Button submitButton;
@@ -31,18 +31,20 @@ public class ChangeLocationFragment extends Fragment {
 
         submitButton = (Button)rootView.findViewById(R.id.submit);
         locationField = (EditText)rootView.findViewById(R.id.editText);
+        //A little bit of "bad user" protection, if he hasn't entered anything worthwhile don't let him click the button.
         locationField.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
-
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (s.length() > 2) {
                     submitButton.setEnabled(true);
                 }
+                if (s.length() <= 2) {
+                    submitButton.setEnabled(false);
+                }
             }
-
             @Override
             public void afterTextChanged(Editable s) {
             }
@@ -56,6 +58,7 @@ public class ChangeLocationFragment extends Fragment {
 
         return rootView;
     }
+    //Calling method with already checked text from EditText view's text, calling the SharedPrefs of the selected location, updating it and hiding the keyboard.
     private void changeLocation(String s) {
         CityPreference cityPreference = new CityPreference(getActivity());
         cityPreference.setCity(s);

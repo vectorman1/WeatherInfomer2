@@ -56,13 +56,14 @@ public class HomeFragment extends Fragment {
         super.onResume();
         getActivity().setTitle("Current Weather");
     }
-
+    //Set the font.
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         weatherFont = Typeface.createFromAsset(getActivity().getAssets(), "fonts/weather.ttf");
         updateWeatherData(new CityPreference(getActivity()).getCity());
     }
+    //Async thread to call for JSON data about the weather in the given city.
     private void updateWeatherData(final String city){
         new Thread(){
             public void run(){
@@ -85,6 +86,8 @@ public class HomeFragment extends Fragment {
             }
         }.start();
     }
+    //Method that draws the weather...
+    //Looks a bit complex but it really isn't.
     private void renderWeather(JSONObject json){
         try {
             cityField.setText(String.format("%s, %s", json.getString("name").toUpperCase(Locale.US), json.getJSONObject("sys").getString("country")));
@@ -109,6 +112,7 @@ public class HomeFragment extends Fragment {
             Log.e("SimpleWeather", "One or more fields not found in the JSON data");
         }
     }
+    //Sets the weather icon in the middle of the screen, given what time of the day it is.
     private void setWeatherIcon(int actualId, long sunrise, long sunset){
         int id = actualId / 100;
         String icon = "";

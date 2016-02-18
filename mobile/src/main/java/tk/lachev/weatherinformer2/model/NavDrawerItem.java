@@ -1,5 +1,5 @@
 package tk.lachev.weatherinformer2.model;
-
+//NavDrawerItem class that can control each nav drawer list item's icon and, title and badges count individually.
 public class NavDrawerItem {
 	
 	private String title;

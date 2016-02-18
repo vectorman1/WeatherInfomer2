@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
+//Calls for default mail app with rec: boris.lachevbg00@gmail.com, predefined topic and body.
 public class ReportIssueFragment extends Fragment {
 	
 	public ReportIssueFragment(){}
